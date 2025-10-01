@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Аргентина — Страна танго и футбола</title>
+  <style>
+    /* Общие стили */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #212529;
+      padding: 0;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Меню навигации */
+    nav {
+      background-color: #2c3e50;
+      padding: 0.8rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #3498db;
+      color: white;
+    }
+
+    /* Шапка */
+    header {
+      background: linear-gradient(135deg, #740001, #004275); /* Цвета флага Аргентины */
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .flag {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.5rem auto;
+      display: block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .flag:hover {
+      transform: scale(1.03);
+    }
+
+    main {
+      padding: 2.5rem 0;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      color: #740001;
+      margin: 1.5rem 0 1rem;
+      font-size: 2rem;
+    }
+
+    h3 {
+      margin: 1.2rem 0 0.6rem;
+      color: #004275;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a:not(nav a) {
+      color: #740001;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px dotted #740001;
+      transition: color 0.2s;
+    }
+
+    a:not(nav a):hover {
+      color: #b00002;
+      border-bottom-style: solid;
+    }
+
+    .interactive-box {
+      background-color: #e9ecef;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    button {
+      background-color: #740001;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #5a0001;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #f8f9fa;
+      text-align: center;
+      padding: 1.8rem 0;
+      margin-top: 2rem;
+    }
+
+    /* Десктоп: ширина ≥ 1024px */
+    @media (min-width: 1024px) {
+      header h1 {
+        font-size: 3rem;
+      }
+
+      .flag {
+        max-width: 600px;
+      }
+
+      h2 {
+        font-size: 2.3rem;
+      }
+
+      nav ul {
+        gap: 2.5rem;
+      }
+    }
+
+    /* Мобильная версия: ширина ≤ 768px */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      header {
+        padding: 1.5rem 0;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 1.5rem 0;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      .flag {
+        max-width: 100%;
+      }
+
+      button {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Меню навигации по странам -->
+  <nav>
+    <ul>
+      <li><a href="argentina.html">🇦🇷 Аргентина</a></li>
+      <li><a href="peru.html">🇵🇪 Перу</a></li>
+      <li><a href="chile.html">🇨🇱 Чили</a></li>
+      <li><a href="brazil.html">🇧🇷 Бразилия</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1>Аргентина</h1>
+      <p>Страна танго, водопадов Игуасу и легендарного футбола</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1280px-Flag_of_Argentina.svg.png" 
+         alt="Флаг Аргентины" class="flag">
+
+    <section>
+      <h2>О стране</h2>
+      <p>Аргентина — вторая по площади страна Южной Америки после Бразилии и восьмая в мире. Расположена между Андами на западе и Атлантическим океаном на востоке, она славится своим культурным разнообразием, природными чудесами и страстной любовью к футболу.</p>
+    </section>
+
+    <section>
+      <h2>Интересные факты</h2>
+      <ul>
+        <li>Столица — Буэнос-Айрес, часто называемый «Парижем Южной Америки».</li>
+        <li>Аргентина — родина танго, одного из самых страстных танцев в мире.</li>
+        <li>Водопады Игуасу на границе с Бразилией входят в число Новых семи чудес природы.</li>
+        <li>Аргентинцы — одни из крупнейших потребителей мяса в мире (особенно говядины).</li>
+        <li>Страна трижды становилась чемпионом мира по футболу (1978, 1986, 2022).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Культура и наследие</h2>
+      <h3>Футбол</h3>
+      <p>Лионель Месси и Диего Марадона родились и выросли в этой стране. В целом от Аргентины больше ничего и не нужно, свою цивилизационную миссию она выполнила.</p>
+    </section>
+
+    <div class="interactive-box">
+      <h3>Изменить тему сайта</h3>
+      <button id="themeBtn">Сменить на тёмную тему</button>
+    </div>
+
+    <p>Узнайте больше на официальном туристическом портале:  
+      <a href="https://www.argentina.travel/" target="_blank" rel="noopener">argentina.travel</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Сайт-визитка стран Южной Америки</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('themeBtn');
+      const body = document.body;
+      let isDark = false;
+
+      btn.addEventListener('click', () => {
+        if (isDark) {
+          body.style.backgroundColor = '#f8f9fa';
+          body.style.color = '#212529';
+          btn.textContent = 'Сменить на тёмную тему';
+        } else {
+          body.style.backgroundColor = '#121212';
+          body.style.color = '#e0e0e0';
+          btn.textContent = 'Сменить на светлую тему';
+        }
+        isDark = !isDark;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чили - Страны Южной Америки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">На главную</a></li>
+                <li><a href="#about">О Чили</a></li>
+                <li><a href="#geography">География</a></li>
+                <li><a href="#culture">Культура</a></li>
+                <li><a href="#attractions">Достопримечательности</a></li>
+            </ul>
+        </nav>
+        <h1>Чили</h1>
+        <p class="subtitle">Страна контрастов и природных чудес</p>
+    </header>
+
+    <main>
+        <section id="about" class="intro">
+            <div class="container">
+                <h2>О Чили</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>Чили — государство на юго-западе Южной Америки, занимающее длинную полосу земли между Тихим океаном и Андами. Это страна с удивительным разнообразием ландшафтов: от самой засушливой пустыни Атакама на севере до ледников и фьордов Патагонии на юге.</p>
+                        <p>Столица: Сантьяго</p>
+                        <p>Население: около 19 миллионов человек</p>
+                        <p>Официальный язык: испанский</p>
+                        <p>Валюта: чилийское песо (CLP)</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/1280px-Flag_of_Chile.svg.png" alt="Флаг Чили" id="chile-flag">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="geography" class="geography">
+            <div class="container">
+                <h2>География и климат</h2>
+                <p>Чили имеет уникальную географию — это самая длинная и узкая страна в мире, протянувшаяся на 4300 км с севера на юг, при средней ширине всего 177 км.</p>
+                
+                <article class="climate-zones">
+                    <h3>Климатические зоны Чили</h3>
+                    <ul>
+                        <li><strong>Северная пустыня:</strong> Атакама — самая сухая пустыня в мире</li>
+                        <li><strong>Центральная долина:</strong> Средиземноморский климат, идеальный для сельского хозяйства</li>
+                        <li><strong>Южные леса:</strong> Умеренный климат с обильными осадками</li>
+                        <li><strong>Патагония и Огненная Земля:</strong> Холодный климат с сильными ветрами</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="culture" class="culture">
+            <div class="container">
+                <h2>Культура и традиции</h2>
+                <div class="culture-content">
+                    <div class="culture-item">
+                        <h3>Кухня</h3>
+                        <p>Чилийская кухня сочетает испанские традиции с местными ингредиентами. Популярные блюда:</p>
+                        <ol>
+                            <li>Эмпанадас — пирожки с различными начинками</li>
+                            <li>Куранто — традиционное блюдо с мясом, картофелем и морепродуктами</li>
+                            <li>Севиче — маринованные морепродукты</li>
+                            <li>Пастель де чокло — пирог с мясной начинкой и кукурузной корочкой</li>
+                        </ol>
+                    </div>
+                    <div class="culture-item">
+                        <h3>Праздники</h3>
+                        <p>Чили славится своими яркими праздниками:</p>
+                        <ul>
+                            <li>Фиестас-Патриас (18-19 сентября) — День независимости</li>
+                            <li>Фестиваль Вендимии — праздник сбора винограда</li>
+                            <li>Карнавал в Арике — яркое уличное празднество</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="attractions" class="attractions">
+            <div class="container">
+                <h2>Достопримечательности</h2>
+                <div class="attractions-grid">
+                    <article class="attraction-card">
+                        <h3>Остров Пасхи</h3>
+                        <p>Знаменитый своими загадочными каменными истуканами моаи, остров Пасхи является объектом Всемирного наследия ЮНЕСКО.</p>
+                    </article>
+                    <article class="attraction-card">
+                        <h3>Пустыня Атакама</h3>
+                        <p>Самая сухая пустыня в мире предлагает уникальные ландшафты: соляные равнины, гейзеры и невероятно чистое небо для астрономических наблюдений.</p>
+                    </article>
+                    <article class="attraction-card">
+                        <h3>Патагония</h3>
+                        <p>Регион с потрясающими природными красотами: ледники, фьорды и национальные парки, включая знаменитый Торрес-дель-Пайне.</p>
+                    </article>
+                    <article class="attraction-card">
+                        <h3>Вальпараисо</h3>
+                        <p>Красочный портовый город с уникальной архитектурой, фуникулерами и богатой культурной жизнью.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive">
+            <div class="container">
+                <h2>Интерактивный раздел</h2>
+                <div class="interactive-content">
+                    <p>Нажмите кнопку, чтобы узнать интересный факт о Чили!</p>
+                    <button id="fact-button">Показать факт</button>
+                    <p id="fact-display" class="hidden"></p>
+                </div>
+                <div class="theme-switcher">
+                    <p>Измените тему страницы:</p>
+                    <button id="theme-button">Переключить тему</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Узнайте больше о Чили на <a href="https://es.wikipedia.org/wiki/Chile" target="_blank">Википедии</a></p>
+            <p>&copy; 2025 Сайт о странах Южной Америки. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

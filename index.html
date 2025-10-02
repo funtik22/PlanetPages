@@ -1,11 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страны Южной Америки</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1>Hello World</h1>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Южная Америка</h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#countries">Страны</a></li>
+                    <li><a href="#features">Особенности</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <h1 class="hero-title">Страны Южной Америки</h1>
+            <p class="hero-subtitle">Откройте для себя удивительный континент контрастов и природных чудес</p>
+            <a href="#countries" class="cta-button">Исследовать страны</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>О нашем проекте</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Южная Америка - это континент, где встречаются древние цивилизации и современные мегаполисы, тропические леса Амазонки и заснеженные вершины Анд.</p>
+                        <p>Наш проект поможет вам познакомиться с уникальными культурами, природными достопримечательностями и богатой историей стран этого удивительного региона.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">стран</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">423</span>
+                            <span class="stat-label">млн человек</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">9</span>
+                            <span class="stat-label">официальных языков</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="countries" class="countries">
+            <div class="container">
+                <h2>Исследуйте страны</h2>
+                <p class="section-intro">Выберите страну, чтобы узнать о ней больше</p>
+                
+                <div class="countries-grid">
+                    <!-- Бразилия -->
+                    <div class="country-card" data-country="brazil">
+                        <div class="country-flag brazil-flag"></div>
+                        <div class="country-info">
+                            <h3>Бразилия</h3>
+                            <p>Крупнейшая страна Южной Америки с карнавалами, Амазонией и футболом</p>
+                            <div class="country-features">
+                                <span class="feature-tag">Карнавал</span>
+                                <span class="feature-tag">Амазонка</span>
+                                <span class="feature-tag">Футбол</span>
+                            </div>
+                            <a href="brazil/index.html" class="explore-btn">Исследовать →</a>
+                        </div>
+                    </div>
+
+                    <!-- Аргентина -->
+                    <div class="country-card" data-country="argentina">
+                        <div class="country-flag argentina-flag"></div>
+                        <div class="country-info">
+                            <h3>Аргентина</h3>
+                            <p>Страна танго, сочного мяса и впечатляющих водопадов Игуасу</p>
+                            <div class="country-features">
+                                <span class="feature-tag">Танго</span>
+                                <span class="feature-tag">Водопады</span>
+                                <span class="feature-tag">Вино</span>
+                            </div>
+                            <a href="argentina/index.html" class="explore-btn">Исследовать →</a>
+                        </div>
+                    </div>
+
+                    <!-- Чили -->
+                    <div class="country-card" data-country="chile">
+                        <div class="country-flag chile-flag"></div>
+                        <div class="country-info">
+                            <h3>Чили</h3>
+                            <p>Узкая страна с невероятным разнообразием ландшафтов и климатических зон</p>
+                            <div class="country-features">
+                                <span class="feature-tag">Пустыня Атакама</span>
+                                <span class="feature-tag">Вина</span>
+                                <span class="feature-tag">Патагония</span>
+                            </div>
+                            <a href="chile/index.html" class="explore-btn">Исследовать →</a>
+                        </div>
+                    </div>
+
+                    <!-- Перу -->
+                    <div class="country-card" data-country="peru">
+                        <div class="country-flag peru-flag"></div>
+                        <div class="country-info">
+                            <h3>Перу</h3>
+                            <p>Древние цивилизации инков, загадочное наследие Мачу-Пикчу и Андские пейзажи</p>
+                            <div class="country-features">
+                                <span class="feature-tag">Мачу-Пикчу</span>
+                                <span class="feature-tag">Инки</span>
+                                <span class="feature-tag">Анды</span>
+                            </div>
+                            <a href="peru/index.html" class="explore-btn">Исследовать →</a>
+                        </div>
+                    </div>
+
+                    <!-- Дополнительные страны -->
+                    <div class="country-card" data-country="colombia">
+                        <div class="country-flag colombia-flag"></div>
+                        <div class="country-info">
+                            <h3>Колумбия</h3>
+                            <p>Страна с богатой культурой, кофе мирового класса и разнообразными ландшафтами</p>
+                            <div class="country-features">
+                                <span class="feature-tag">Кофе</span>
+                                <span class="feature-tag">Тропики</span>
+                                <span class="feature-tag">Карнавал</span>
+                            </div>
+                            <a href="#" class="explore-btn disabled">Скоро →</a>
+                        </div>
+                    </div>
+
+                    <div class="country-card" data-country="uruguay">
+                        <div class="country-flag uruguay-flag"></div>
+                        <div class="country-info">
+                            <h3>Уругвай</h3>
+                            <p>Одна из самых развитых стран региона с прекрасными пляжами и спокойной атмосферой</p>
+                            <div class="country-features">
+                                <span class="feature-tag">Пляжи</span>
+                                <span class="feature-tag">Спокойствие</span>
+                                <span class="feature-tag">Природа</span>
+                            </div>
+                            <a href="#" class="explore-btn disabled">Скоро →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Особенности континента</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌎</div>
+                        <h3>Разнообразие ландшафтов</h3>
+                        <p>От тропических лесов Амазонки до ледников Патагонии и высокогорных плато Анд</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏛️</div>
+                        <h3>Богатая история</h3>
+                        <p>Древние цивилизации инков, майя и ацтеков, колониальное наследие и современная культура</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎭</div>
+                        <h3>Яркие культуры</h3>
+                        <p>Танго, самба, карнавалы, уникальная кухня и гостеприимные народы</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🐆</div>
+                        <h3>Уникальная природа</h3>
+                        <p>Богатейшая флора и фауна, множество эндемичных видов и природных заповедников</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Страны Южной Америки</h3>
+                    <p>Образовательный проект по предмету WEB</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Команда проекта</h4>
+                    <ul>
+                        <li>Чили - Артём</li>
+                        <li>Бразилия - [Имя участника]</li>
+                        <li>Аргентина - [Имя участника]</li>
+                        <li>Перу - [Имя участника]</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#about">О проекте</a></li>
+                        <li><a href="#countries">Все страны</a></li>
+                        <li><a href="#features">Особенности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Командный проект по WEB. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

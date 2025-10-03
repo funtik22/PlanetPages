@@ -1,4 +1,3 @@
-// Факты о Чили
 const facts = [
     "Чили — самая длинная и узкая страна в мире, протянувшаяся на 4300 км с севера на юг.",
     "Пустыня Атакама в Чили — самое сухое место на Земле, где в некоторых районах дождь не выпадал сотни лет.",
@@ -12,12 +11,10 @@ const facts = [
     "Сантьяго, столица Чили, расположен в долине у подножия Анд, что создает впечатляющий пейзаж."
 ];
 
-// Элементы DOM
 const factButton = document.getElementById('fact-button');
 const factDisplay = document.getElementById('fact-display');
 const themeButton = document.getElementById('theme-button');
 
-// Показ случайного факта
 factButton.addEventListener('click', function() {
     const randomIndex = Math.floor(Math.random() * facts.length);
     factDisplay.textContent = facts[randomIndex];
@@ -25,11 +22,9 @@ factButton.addEventListener('click', function() {
     factDisplay.classList.add('visible');
 });
 
-// Переключение темы
 themeButton.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme');
     
-    // Сохранение предпочтения темы в localStorage
     if (document.body.classList.contains('dark-theme')) {
         localStorage.setItem('theme', 'dark');
         themeButton.textContent = 'Переключить на светлую тему';
@@ -39,7 +34,6 @@ themeButton.addEventListener('click', function() {
     }
 });
 
-// Проверка сохраненной темы при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
@@ -47,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         themeButton.textContent = 'Переключить на светлую тему';
     }
     
-    // Плавное появление элементов при загрузке
     const elements = document.querySelectorAll('section, header, footer');
     elements.forEach(element => {
         element.style.opacity = '0';
@@ -66,7 +59,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const targetId = this.getAttribute('href');
         
-        // Если ссылка внутренняя (начинается с #)
         if (targetId.startsWith('#')) {
             e.preventDefault();
             const targetElement = document.querySelector(targetId);
@@ -80,6 +72,5 @@ document.querySelectorAll('nav a').forEach(anchor => {
                 });
             }
         }
-        // Если ссылка внешняя (например, ../index.html) → браузер обрабатывает её сам
     });
 });

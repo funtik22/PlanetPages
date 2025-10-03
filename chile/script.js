@@ -62,21 +62,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 100);
 });
-// Обновленный код для плавной прокрутки с учетом фиксированной навигации
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
         const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
         
-        // Учитываем высоту фиксированной навигации
-        const navHeight = document.querySelector('nav').offsetHeight;
-        const targetPosition = targetElement.offsetTop - navHeight - 20; // Дополнительный отступ
-        
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
+        // Если ссылка внутренняя (начинается с #)
+        if (targetId.startsWith('#')) {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = targetElement.offsetTop - navHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        // Если ссылка внешняя (например, ../index.html) → браузер обрабатывает её сам
     });
 });

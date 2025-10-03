@@ -1,0 +1,175 @@
+body {
+	background: #FFDF00;
+	color: #002776;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	text-align: center;
+	padding: 0px;
+	margin: 0;
+}
+
+header {
+	background: #009C3B;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 3px;
+}
+
+h3 {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+	margin-top: 15px;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #FFDF00;
+}
+
+main {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 20px;
+	background: #fff9c4;
+	border-radius: 10px;
+}
+
+section {
+	margin-bottom: 20px;
+	animation: up 1s ease;
+}
+
+article {
+	margin-bottom: 20px;
+	animation: left 2s ease;
+}
+
+h2 {
+	margin-bottom: 10px;
+	color: #002776;
+}
+
+article img {
+	display: block;
+	margin: 10px auto;
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+#clock {
+	display: inline-block;
+	background: white;
+	color: #002776;
+	padding: 8px 12px;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	background: white;
+	margin-top: 10px;
+}
+
+th, td {
+	border: 1px solid #002776;
+	padding: 10px;
+	text-align: left;
+}
+
+button {
+	background: #002776;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+	background: #0044aa;
+	transform: scale(1.05);
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+footer {
+	background: #000000;
+	color: #ccc;
+	text-align: center;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+@keyframes up {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes left {
+	from { opacity: 0; transform: translateX(-300px); }
+	to { opacity: 1; transform: translateX(0); }
+}
+
+@media (min-width: 1200px) {
+	body {
+		font-size: 20px;
+	}
+
+	header h1 {
+		font-size: 4em;
+	}
+
+	main {
+		max-width: 1400px;
+	}
+
+	section {
+		margin-bottom: 25px;
+		animation: up 1.5s ease;
+	}
+
+	article {
+		margin-bottom: 25px;
+		animation: left 3s ease;
+	}
+}
+
+@media (max-width: 750px) {
+	body {
+		font-size: 11px;
+	}
+
+	header h1 {
+		font-size: 2em;
+	}
+
+	main {
+	    background: #FFDF00;
+	}
+}
